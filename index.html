@@ -30,7 +30,7 @@
         }
 
         .mycontainer {
-			display: flex;
+		display: flex;
       		flex-wrap: wrap;
       		justify-content: center;
       		align-items: flex-start;
@@ -53,28 +53,26 @@
 
 @media(max-width: 768px) {
     .mycontainer {
-        flex-direction: column; /* Stack the items vertically */
-        gap: 20px;
+	display: flex;
+	flex-direction: column; /* Stack the items vertically */
+      	flex-wrap: wrap;
+      	justify-content: center;
+      	align-items: flex-start;
+      	gap: 40px;    
     }
 
-    .item {
-        width: 90%;  /* Ensure items are narrower and stack better */
-    }
+	section{
 
-    .item img {
-        width: 80%; /* Make images fit smaller screens */
-    }
+	}
+
+	aside{
+
+	}
+
+
 }
 
-@media(max-width: 400px) {
-    section, aside {
-        width: 100%;  /* Take up full width for very small screens */
-    }
 
-    .item img {
-        width: 90%; /* Images fit within smaller screens */
-    }
-}
         
         
     </style>
