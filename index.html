@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en-PH">
+<head>
+    <title>Mikhael Profile</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html, body {
+            height: 100%; /* Ensures full page height */
+            margin: 0;    /* Removes any default margin */
+            padding: 0;   /* Removes any default padding */
+            width: 100%;  /* Ensures the body and html take the full width */
+}
+
+        body {
+            background-color: rgba(211, 211, 211, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .black_text {
+            background-color: black;
+            color: white;
+            padding: 3px;
+        }
+
+        .mycontainer {
+			display: flex;
+      		flex-wrap: wrap;
+      		justify-content: center;
+      		align-items: flex-start;
+      		gap: 60px;
+        }
+
+        .item {
+        	color: black;
+            background-color: white;
+            
+        }
+        
+        
+        footer{
+            background-color: rgba(119, 119, 119, 1);
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>The Profile</h1>
+    <p style="text-align: center; margin-bottom: 90px;">Welcome to <span class="black_text">Mikhael's</span> profile</p>
+
+    <div class="mycontainer" style="margin-bottom: 50px;">
+        <div class="item" style="width: 50%;  text-align: center;">
+            <h2>To be filled</h2>
+
+            <img src="image/pic_bulbon.gif" style="display:none;" />
+            <img src="image/pic_bulboff.gif" style="display:none;" />
+            <script>
+                function light(num) {
+                    var pic;
+                    if (num == 1) {
+                        pic = "image/pic_bulbon.gif";
+                    } else {
+                        pic = "image/pic_bulboff.gif";
+                    }
+                    document.getElementById('myImage').src = pic;
+                }
+            </script>
+            <img id="myImage" src="image/pic_bulboff.gif" style="width: 10%; height: 10%;"><br>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+        </div>
+
+        <div class="item" style="width: 35%;">
+            <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
+            <h4><b>Mikhael Edman P. Gomez</b></h4>
+            <p>A college student in FEU Tech<br>Computer Science Major</p>
+            <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';">
+                Alternate Profile
+            </button>
+
+            <script>
+                let isOriginal = true;
+
+                function link(num) {
+                    const myLink = document.getElementById('myLink');
+                    
+                    if (isOriginal) {
+                        myLink.onclick = function() {
+                            window.location.href = "rhau_profile.html";
+                        };
+                        myLink.innerHTML = "Rhaulline's Profile";
+                    } else {
+                        myLink.onclick = function() {
+                            window.location.href = "index_alt.html";
+                        };
+                        myLink.innerHTML = "Alternate Profile";
+                    }
+
+                    isOriginal = !isOriginal;
+                }
+            </script>
+            <button type="button" onclick="link()" style= "margin-bottom: 30px;">Click me to change link</button>
+
+        </div>
+    </div>
+    <footer>
+        <h3>Footer</h3>
+        </footer>
+           
+</body>
+
+</html>
