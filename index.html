@@ -1,172 +1,175 @@
 <!DOCTYPE html>
 <html lang="en-PH">
-<head>
-    <title>Mikhael Profile</title>
+    <!-- Head section containing metadata and styling -->
+    <head>
+        <title>Mikhael Profile</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta tags for character encoding and responsive viewport -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+        <!-- External font imports from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
 
+        <!-- Internal CSS styles -->
+        <style>
+            /* Base layout styles */
+            html, body {
+                height: 100%;     /* Ensures full page height */
+                margin: 0;        /* Removes any default margin */
+                padding: 0;       /* Removes any default padding */
+                width: 100%;      /* Ensures the body and html take the full width */
+            }
 
-    <style>
-        html, body {
-            height: 100%; /* Ensures full page height */
-            margin: 0;    /* Removes any default margin */
-            padding: 0;   /* Removes any default padding */
-            width: 100%;  /* Ensures the body and html take the full width */
-}
+            body {
+                background-color: rgba(221, 221, 221, 0.3);
+            }
 
-        body {
-            background-color: rgba(221, 221, 221, 0.3);
-        }
+            /* Typography styles */
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Raleway', sans-serif;
+            }
 
-	    /* Use Playfair Display for headings */
-/* Apply Raleway to headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
-}
+            body, p, li, span {
+                font-family: 'Open Sans', sans-serif;
+            }
 
-/* Apply Open Sans to body text */
-body, p, li, span {
-    font-family: 'Open Sans', sans-serif;
-}
+            h1 {
+                text-align: center;
+            }
 
-        h1 {
-            text-align: center;
-        }
+            /* Custom component styles */
+            .black_text {
+                background-color: black;
+                color: white;
+                padding: 3px;
+            }
 
-        .black_text {
-            background-color: black;
-            color: white;
-            padding: 3px;
-        }
+            .mycontainer {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 60px;
+            }
 
-        .mycontainer {
-		display: flex;
-		justify-content: center;
-      		flex-wrap: wrap;
-      		align-items: flex-start;
-      		gap: 60px;
-        }
+            .item {
+                color: black;
+                background-color: white;
+            }
 
-        .item {
-        	color: black;
-            background-color: white;
+            .text_margin {
+                margin-left: 25px;
+            }
+
+            section {
+                width: 50%;  
+                text-align: center;
+            }
+
+            aside {
+                width: 35%;
+            }
             
-        }
+            footer {
+                background-color: rgba(119, 119, 119, 1);
+                color: white;
+                padding: 5px;
+            }
 
-	.text_margin{
-		margin-left: 25px;
-
-	}
-
-	    section{
-		width: 50%;  
-		text-align: center;
-	    }
-
-	    aside{
-		width: 35%;
-	    }
-        
-        
-        footer {
-            background-color: rgba(119, 119, 119, 1);
-            color: white;
-            padding: 5px;
-        }
-
-	    
-
-@media (max-width: 768px) {
-    .mycontainer {
-
-      	gap: 40px;    
-    }
-
-	section{
-	width: 80%;
-	}
-
-	aside{
-	width: 80%;
-	}
-
-
-}
-
-
-        
-        
-    </style>
-</head>
-
-<body>
-
-    <h1>The Profile</h1>
-    <p style="text-align: center; margin-bottom: 90px;">Welcome to <span class="black_text">Mikhael's</span> profile</p>
-
-    <div class="mycontainer" style="margin-bottom: 50px;">
-        <section class="item">
-            <h2>To be filled</h2>
-
-            <img src="image/pic_bulbon.gif" style="display:none;" />
-            <img src="image/pic_bulboff.gif" style="display:none;" />
-            <script>
-                function light(num) {
-                    var pic;
-                    if (num == 1) {
-                        pic = "image/pic_bulbon.gif";
-                    } else {
-                        pic = "image/pic_bulboff.gif";
-                    }
-                    document.getElementById('myImage').src = pic;
+            /* Media query for responsive design */
+            @media (max-width: 768px) {
+                .mycontainer {
+                    gap: 40px;    
                 }
-            </script>
-            <img id="myImage" src="image/pic_bulboff.gif" style="max-width:10%;height:auto;"><br>
-            <button type="button" onclick="light(1)">Light On</button>
-            <button type="button" onclick="light(0)">Light Off</button>
-        </section>
 
-        <aside class="item">
-            <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
-            <h4 class= "text_margin"><b>Mikhael Edman P. Gomez</b></h4>
-            <p class= "text_margin">A college student in FEU Tech<br>Computer Science Major</p>
-            <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class= "text_margin">
-                Alternate Profile
-            </button>
-
-            <script>
-                let isOriginal = true;
-
-                function link() {
-                    const myLink = document.getElementById('myLink');
-                    
-                    if (isOriginal) {
-                        myLink.onclick = function() {
-                            window.location.href = "rhau_profile.html";
-                        };
-                        myLink.innerHTML = "Rhaulline's Profile";
-                    } else {
-                        myLink.onclick = function() {
-                            window.location.href = "index_alt.html";
-                        };
-                        myLink.innerHTML = "Alternate Profile";
-                    }
-
-                    isOriginal = !isOriginal;
+                section {
+                    width: 80%;
                 }
-            </script>
-            <button type="button" onclick="link()" style= "margin-bottom: 30px;">Click me to change link</button>
 
-        </aside>
-    </div>
-    <footer>
-        <h4 style= "margin-left: 30px;">A Mikhael's Website</h4>
+                aside {
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+
+    <!-- Body section containing the main content -->
+    <body>
+        <!-- Header section -->
+        <h1>The Profile</h1>
+        <p style="text-align: center; margin-bottom: 90px;">Welcome to <span class="black_text">Mikhael's</span> profile</p>
+
+        <!-- Main content container -->
+        <div class="mycontainer" style="margin-bottom: 50px;">
+            <!-- Light bulb section -->
+            <section class="item">
+                <h2>To be filled</h2>
+
+                <!-- Hidden images for light bulb states -->
+                <img src="image/pic_bulbon.gif" style="display:none;" />
+                <img src="image/pic_bulboff.gif" style="display:none;" />
+                
+                <!-- Light bulb control script -->
+                <script>
+                    function light(num) {
+                        var pic;
+                        if (num == 1) {
+                            pic = "image/pic_bulbon.gif";
+                        } else {
+                            pic = "image/pic_bulboff.gif";
+                        }
+                        document.getElementById('myImage').src = pic;
+                    }
+                </script>
+                
+                <!-- Light bulb interface -->
+                <img id="myImage" src="image/pic_bulboff.gif" style="max-width:10%;height:auto;"><br>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light Off</button>
+            </section>
+
+            <!-- Profile section -->
+            <aside class="item">
+                <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
+                <h4 class="text_margin"><b>Mikhael Edman P. Gomez</b></h4>
+                <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
+                
+                <!-- Profile navigation buttons -->
+                <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class="text_margin">
+                    Alternate Profile
+                </button>
+
+                <!-- Link switching script -->
+                <script>
+                    let isOriginal = true;
+
+                    function link() {
+                        const myLink = document.getElementById('myLink');
+                        
+                        if (isOriginal) {
+                            myLink.onclick = function() {
+                                window.location.href = "rhau_profile.html";
+                            };
+                            myLink.innerHTML = "Rhaulline's Profile";
+                        } else {
+                            myLink.onclick = function() {
+                                window.location.href = "index_alt.html";
+                            };
+                            myLink.innerHTML = "Alternate Profile";
+                        }
+
+                        isOriginal = !isOriginal;
+                    }
+                </script>
+                <button type="button" onclick="link()" style="margin-bottom: 30px;">Click me to change link</button>
+            </aside>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <h4 style="margin-left: 30px;">A Mikhael's Website</h4>
         </footer>
-           
-</body>
-
+    </body>
 </html>
