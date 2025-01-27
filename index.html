@@ -1,154 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en-PH">
-<head>
-    <title>Mikhael Profile</title>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Mikhael Profile</title>
+		
+    <!-- Import Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
     <style>
-        html, body {
-            height: 100%; /* Ensures full page height */
-            margin: 0;    /* Removes any default margin */
-            padding: 0;   /* Removes any default padding */
-            width: 100%;  /* Ensures the body and html take the full width */
-}
-
-        body {
-            background-color: rgba(221, 221, 221, 0.3);
+        /* Global reset and font-family setup */
+        html,
+        body,
+        p {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
         }
 
-	    /* Use Playfair Display for headings */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
+        body {
+            background-color: rgba(221, 221, 221, 0.3); /* Light background for the body */
+        }
 
-/* Use Source Sans Pro for body text */
-body, p {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+        /* Use 'Raleway' font for headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Raleway', sans-serif;
+        }
 
         h1 {
             text-align: center;
         }
 
+        /* Styling for the class that gives a black background and white text */
         .black_text {
             background-color: black;
             color: white;
             padding: 3px;
         }
 
+        /* Main container with flexible layout */
         .mycontainer {
-		display: flex;
-		justify-content: center;
-      		flex-wrap: wrap;
-      		align-items: flex-start;
-      		gap: 60px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 60px;
         }
 
         .item {
-        	color: black;
+            color: black;
             background-color: white;
-            
         }
 
-	.text_margin{
-		margin-left: 25px;
+        .text_margin {
+            margin-left: 25px;
+        }
 
-	}
+        /* Styling for section and aside elements */
+        section {
+            width: 50%;
+            text-align: center;
+        }
 
-	    section{
-		width: 50%;  
-		text-align: center;
-	    }
+        aside {
+            width: 35%;
+        }
 
-	    aside{
-		width: 35%;
-	    }
-        
-        
+        /* Footer styling */
         footer {
             background-color: rgba(119, 119, 119, 1);
             color: white;
             padding: 5px;
         }
 
-	    
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .mycontainer {
+                gap: 40px;
+            }
 
-@media (max-width: 768px) {
-    .mycontainer {
-
-      	gap: 40px;    
-    }
-
-	section{
-	width: 80%;
-	}
-
-	aside{
-	width: 80%;
-	}
-
-
-}
-
-
-        
-        
+            section,
+            aside {
+                width: 80%;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <h1>The Profile</h1>
+    <!-- Introduction with a styled span element -->
     <p style="text-align: center; margin-bottom: 90px;">Welcome to <span class="black_text">Mikhael's</span> profile</p>
 
+    <!-- Main content container with section and aside elements -->
     <div class="mycontainer" style="margin-bottom: 50px;">
+        <!-- Section for light control feature -->
         <section class="item">
             <h2>To be filled</h2>
 
+            <!-- Light control images hidden initially -->
             <img src="image/pic_bulbon.gif" style="display:none;" />
             <img src="image/pic_bulboff.gif" style="display:none;" />
+
+            <!-- JavaScript function for switching images -->
             <script>
                 function light(num) {
                     var pic;
                     if (num == 1) {
-                        pic = "image/pic_bulbon.gif";
+                        pic = "image/pic_bulbon.gif"; // Light on
                     } else {
-                        pic = "image/pic_bulboff.gif";
+                        pic = "image/pic_bulboff.gif"; // Light off
                     }
                     document.getElementById('myImage').src = pic;
                 }
             </script>
-            <img id="myImage" src="image/pic_bulboff.gif" style="max-width:10%;height:auto;"><br>
+
+            <!-- Image and button for light control -->
+            <img id="myImage" src="image/pic_bulboff.gif" style="max-width:10%; height:auto;"><br>
             <button type="button" onclick="light(1)">Light On</button>
             <button type="button" onclick="light(0)">Light Off</button>
         </section>
 
+        <!-- Aside section with profile image and description -->
         <aside class="item">
             <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
-            <h4 class= "text_margin"><b>Mikhael Edman P. Gomez</b></h4>
-            <p class= "text_margin">A college student in FEU Tech<br>Computer Science Major</p>
-            <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class= "text_margin">
+            <h4 class="text_margin"><b>Mikhael Edman P. Gomez</b></h4>
+            <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
+
+            <!-- Button to link to alternate profile -->
+            <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class="text_margin">
                 Alternate Profile
             </button>
 
+            <!-- JavaScript to toggle link functionality -->
             <script>
                 let isOriginal = true;
 
                 function link() {
                     const myLink = document.getElementById('myLink');
-                    
+
+                    // Toggle link and button text
                     if (isOriginal) {
-                        myLink.onclick = function() {
+                        myLink.onclick = function () {
                             window.location.href = "rhau_profile.html";
                         };
                         myLink.innerHTML = "Rhaulline's Profile";
                     } else {
-                        myLink.onclick = function() {
+                        myLink.onclick = function () {
                             window.location.href = "index_alt.html";
                         };
                         myLink.innerHTML = "Alternate Profile";
@@ -157,14 +165,18 @@ body, p {
                     isOriginal = !isOriginal;
                 }
             </script>
-            <button type="button" onclick="link()" style= "margin-bottom: 30px;">Click me to change link</button>
 
+            <!-- Button to trigger the link change -->
+            <button type="button" onclick="link()" style="margin-bottom: 30px;">Click me to change link</button>
         </aside>
     </div>
+
+    <!-- Footer section -->
     <footer>
-        <h4 style= "margin-left: 30px;">A Mikhael's Website</h4>
-        </footer>
-           
+        <h4 style="margin-left: 30px;">A Mikhael's Website</h4>
+    </footer>
+
 </body>
 
 </html>
+	
