@@ -1,5 +1,4 @@
-        <!-- Internal CSS styles -->
-        <style>
+
             /* Base layout styles */
             html, body {
                 height: 100%;     /* Ensures full page height */
@@ -78,4 +77,4 @@
                     width: 80%;
                 }
             }
-        </style>
+   
