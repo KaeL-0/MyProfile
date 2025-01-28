@@ -1,0 +1,81 @@
+        <!-- Internal CSS styles -->
+        <style>
+            /* Base layout styles */
+            html, body {
+                height: 100%;     /* Ensures full page height */
+                margin: 0;        /* Removes any default margin */
+                padding: 0;       /* Removes any default padding */
+                width: 100%;      /* Ensures the body and html take the full width */
+            }
+
+            body {
+                background-color: rgba(221, 221, 221, 0.3);
+            }
+
+            /* Typography styles */
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            body, p, li, span {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            /* Custom component styles */
+            .black_text {
+                background-color: black;
+                color: white;
+                padding: 3px;
+            }
+
+            .mycontainer {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 60px;
+            }
+
+            .item {
+                color: black;
+                background-color: white;
+            }
+
+            .text_margin {
+                margin-left: 25px;
+            }
+
+            section {
+                width: 50%;  
+                text-align: center;
+            }
+
+            aside {
+                width: 35%;
+            }
+            
+            footer {
+                background-color: rgba(119, 119, 119, 1);
+                color: white;
+                padding: 5px;
+            }
+
+            /* Media query for responsive design */
+            @media (max-width: 768px) {
+                .mycontainer {
+                    gap: 40px;    
+                }
+
+                section {
+                    width: 80%;
+                }
+
+                aside {
+                    width: 80%;
+                }
+            }
+        </style>
