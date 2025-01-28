@@ -57,9 +57,7 @@
                 <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
                 
                 <!-- Profile navigation buttons -->
-                <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class="text_margin">
-                    Alternate Profile
-                </button>
+                <a href="alt_profile.html" target="_blank" class="text_margin"><button>Alternate Profile</button></a>
 
                 <!-- Link switching script -->
                 <script>
@@ -70,12 +68,12 @@
                         
                         if (isOriginal) {
                             myLink.onclick = function() {
-                                window.location.href = "rhau_profile.html";
+                                href = "rhau_profile.html";
                             };
                             myLink.innerHTML = "Rhaulline's Profile";
                         } else {
                             myLink.onclick = function() {
-                                window.location.href = "index_alt.html";
+                                href = "index_alt.html";
                             };
                             myLink.innerHTML = "Alternate Profile";
                         }
