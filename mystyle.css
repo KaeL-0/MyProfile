@@ -48,6 +48,10 @@
                 margin-left: 25px;
             }
 
+            .myborder{
+                border-style: outset;
+            }
+
             section {
                 width: 50%;  
                 text-align: center;
