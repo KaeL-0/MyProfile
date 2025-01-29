@@ -42,14 +42,11 @@
             .item {
                 color: black;
                 background-color: white;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* X, Y, Blur, Spread, Color */
             }
 
             .text_margin {
                 margin-left: 25px;
-            }
-
-            .myborder{
-                border: 2px solid rgb(210, 215, 211);
             }
 
             section {
