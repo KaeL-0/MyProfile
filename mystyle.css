@@ -51,8 +51,8 @@
 
             p.footer_text{
                 font-family: 'Raleway', sans-serif;
-                font-size: 80%;
-                margin-left: 20px;
+                font-size: 90%;
+                margin-left: 15px;
             }
 
             section {
@@ -67,7 +67,7 @@
             footer {
                 background-color: rgba(109, 109, 109, 1);
                 color: white;
-                padding: 15px;
+                padding: 30px;
             }
 
             /* Media query for responsive design */
