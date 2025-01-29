@@ -49,7 +49,7 @@
             }
 
             .myborder{
-                border-style: outset;
+                border: 2px outset black;
             }
 
             section {
