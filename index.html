@@ -13,6 +13,24 @@
 
         <!-- External CSS stylesheet -->
         <link rel="stylesheet" href="mystyle.css">
+
+        <style>
+        a:link, a:visited {
+          background-color: white;
+          color: black;
+          border: 2px rgb(248, 248, 255);
+          padding: 5px 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        a:hover, a:active {
+          background-color: rgb(119, 136, 153);
+          color: white;
+        }
+            
+        </style>
     </head>
 
     <!-- Body section containing the main content -->
@@ -58,9 +76,8 @@
                 <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
                 
                 <!-- Profile navigation buttons -->
-                <button id="myLink" type="button" onclick="window.location.href= 'alt_profile.html';" class="text_margin">
-                    Alternate Profile
-                </button>
+                <a href="alt_profile.html" target="_blank">Alternate Profile</a>
+                
                 <!-- Link switching script -->
                 <script>
                     let isOriginal = true;
@@ -70,12 +87,12 @@
                         
                         if (isOriginal) {
                             myLink.onclick = function() {
-                                window.location.href = "rhau_profile.html";
+                                href = "rhau_profile.html";
                             };
                             myLink.innerHTML = "Rhaulline's Profile";
                         } else {
                             myLink.onclick = function() {
-                                window.location.href = "alt_profile.html";
+                                href = "alt_profile.html";
                             };
                             myLink.innerHTML = "Alternate Profile";
                         }
