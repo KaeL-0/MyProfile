@@ -33,7 +33,24 @@
           background-color: rgb(119, 136, 153);
           color: white;
         }
-            
+
+        .mybutton {
+            font-family: 'Raleway', sans-serif;
+            font-size: 85%;
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(119, 136, 153);
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 30px; 
+            padding: 5px 10px;
+        }
+
+        .mybutton:hover, .mybutton:active {
+            background-color: rgb(119, 136, 153);
+            color: white;
+        }
         </style>
     </head>
 
@@ -101,7 +118,7 @@
                         isOriginal = !isOriginal;
                     }
                 </script>
-                <button type="button" onclick="link()" style="margin-bottom: 30px; padding: 5px 10px;">Click me to change link</button>
+                <button type="button" onclick="link()" class="mybutton">Click me to change link</button>
             </aside>
         </div>
 
