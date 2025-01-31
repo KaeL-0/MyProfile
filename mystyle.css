@@ -82,6 +82,12 @@
                 color: white;
         }
 
+            .button_container{
+            display: flex;
+            flex-wrap: nowrap;
+            
+            }
+
             .mybutton {
                 font-family: 'Raleway', sans-serif;
                 font-size: 85%;
