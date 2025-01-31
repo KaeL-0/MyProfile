@@ -87,6 +87,10 @@
             flex-wrap: nowrap;
             
             }
+            .button_container .button_item{
+            width: 10%;
+
+            }
 
             .mybutton {
                 font-family: 'Raleway', sans-serif;
