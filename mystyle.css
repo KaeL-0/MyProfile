@@ -58,12 +58,12 @@
             }
 
             section {
-                width: 50%;  
+                width: 60%;  
                 text-align: center;
             }
 
             aside {
-                width: 35%;
+                width: 25%;
             }
             a:link, a:visited {
                 font-family: 'Raleway', sans-serif;
