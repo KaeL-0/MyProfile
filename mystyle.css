@@ -1,167 +1,167 @@
+/* Base layout styles */
+html, body {
+    height: 100%;     /* Ensures full page height */
+    margin: 0;        /* Removes any default margin */
+    padding: 0;       /* Removes any default padding */
+    width: 100%;      /* Ensures the body and html take the full width */
+}
 
-            /* Base layout styles */
-            html, body {
-                height: 100%;     /* Ensures full page height */
-                margin: 0;        /* Removes any default margin */
-                padding: 0;       /* Removes any default padding */
-                width: 100%;      /* Ensures the body and html take the full width */
-            }
-            body {
-                background-color: rgba(221, 221, 221, 0.4);
+body {
+    background-color: rgba(221, 221, 221, 0.4);
+}
 
-            }
-            
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
 
-            /* Typography styles */
-            h1, h2, h3, h4, h5, h6 {
-                font-family: 'Raleway', sans-serif;
-            }
+body, p, li, span {
+    font-family: 'Open Sans', sans-serif;
+}
 
-            body, p, li, span {
-                font-family: 'Open Sans', sans-serif;
-            }
+h1 {
+    text-align: center;
+}
 
-            h1 {
-                text-align: center;
-            }
+/* Container and grid layout styles */
+.mycontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+    height: auto;
+}
 
-            /* Custom component styles */
-            .black_text {
-                background-color: black;
-                color: white;
-                padding: 3px;
-            }
+.grid_container {
+    display: grid;
+    row-gap: 50px;
+}
 
-            .mycontainer {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                gap: 60px;
-                width: 100%
-                height: auto;
-            }
+/* Content item styles */
+.item {
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
 
-        .grid_container{
-        display: grid;
-        row-gap: 50px;
-        }
+.text_item {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
 
-        .text_item{
-        text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 25px;
-        }
+.text_margin {
+    margin-left: 25px;
+}
 
-            .item {
-                color: black;
-                background-color: white;
-                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* X, Y, Blur, Spread, Color */
-            }
+.black_text {
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
 
-            .text_margin {
-                margin-left: 25px;
-            }
+/* Header styles */
+h3.myheader {
+    color: black;
+    background-color: rgba(221, 221, 221, 0.4);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
 
-        h3.myheader {
-        color: black;
-        background-color: rgba(221, 221, 221, 0.4);
-        font-size: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 25px;
-        }
-        
+/* Section and aside layout */
+section {
+    width: 50%;  
+    text-align: center;
+}
 
-            p.footer_text{
-                font-family: 'Raleway', sans-serif;
-                font-size: 90%;
-                margin-left: 15px;
-            }
+aside {
+    width: 35%;
+}
 
-            section {
-                width: 50%;  
-                text-align: center;
-            }
+/* Link styles */
+a:link, a:visited {
+    font-family: 'Raleway', sans-serif;
+    font-size: 85%;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(119, 136, 153);
+    margin-left: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
-            aside {
-                width: 35%;
-            }
-            a:link, a:visited {
-                font-family: 'Raleway', sans-serif;
-                font-size: 85%;
-                background-color: white;
-                color: black;
-                border: 2px solid rgb(119, 136, 153);
-                margin-left: 25px;
-                padding: 5px 10px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-        }
+a:hover, a:active {
+    background-color: rgb(119, 136, 153);
+    color: white;
+}
 
-            a:hover, a:active {
-        
-                background-color: rgb(119, 136, 153);
-                color: white;
-        }
+/* Button styles */
+.button_container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;     
+}
 
-            .button_container{
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 5px;     
-            
-            }
-            .button_container .button_item{
-            width: 10%;
+.button_container .button_item {
+    width: 10%;
+}
 
-            }
+.mybutton {
+    font-family: 'Raleway', sans-serif;
+    font-size: 85%;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(119, 136, 153);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+}
 
-            .mybutton {
-                font-family: 'Raleway', sans-serif;
-                font-size: 85%;
-                background-color: white;
-                color: black;
-                border: 2px solid rgb(119, 136, 153);
-                text-decoration: none;
-                display: inline-block;
-                cursor: pointer;
-                padding: 5px 10px;
-            }
+.mybutton:hover, .mybutton:active {
+    background-color: rgb(119, 136, 153);
+    color: white;
+}
 
-            .mybutton:hover, .mybutton:active {
-                background-color: rgb(119, 136, 153);
-                color: white;
-            }
+/* Footer styles */
+footer {
+    background-color: rgb(119, 136, 153);
+    color: white;
+    padding: 30px;
+}
 
-            footer {
-                background-color: rgb(119, 136, 153);
-                color: white;
-                padding: 30px;
-            }
+p.footer_text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90%;
+    margin-left: 15px;
+}
 
-            /* Media query for responsive design */
-            @media (max-width: 768px) {
-                .mycontainer {
-                    gap: 40px;    
-                }
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .mycontainer {
+        gap: 40px;    
+    }
 
-                section {
-                    width: 80%;
-                }
+    section {
+        width: 80%;
+    }
 
-                aside {
-                    width: 80%;
-                }
+    aside {
+        width: 80%;
+    }
 
-                .button_container{
-                    justify-content: center;      
+    .button_container {
+        justify-content: center;      
+    }
 
-                }
-                a:link, a:visited {
-                margin-left: 0px;
-        }
-            
-            }
-   
+    a:link, a:visited {
+        margin-left: 0px;
+    }
+}
