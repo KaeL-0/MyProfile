@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-PH">
-    <!-- Head section containing metadata, fonts, and styling -->
+    <!-- Head section containing metadata and styling -->
     <head>
         <title>Mikhael Profile</title>
 
@@ -8,70 +8,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- External font imports from Google Fonts -->
+        <!-- External font import from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- External CSS stylesheet -->
         <link rel="stylesheet" href="mystyle.css">
+        
+        
     </head>
 
     <!-- Body section containing the main content -->
     <body>
-        <!-- Header with title and welcome message -->
+        <!-- Header section -->
         <h1>The Profile</h1>
-        <p style="text-align: center; margin-bottom: 90px;">
-            Welcome to <span class="black_text">Mikhael's</span> profile
-        </p>
+        <p style="text-align: center; margin-bottom: 90px;">Welcome to <span class="black_text">Mikhael's</span> profile</p>
 
         <!-- Main content container -->
         <main class="mycontainer" style="margin-bottom: 70px;">
-            <!-- Project showcase section -->
+            <!-- Light bulb section -->
             <section class="grid_container">
-                <!-- Game Leaderboard Project -->
                 <div class="item">
                     <img src="image/leaderboard.png" alt="C++ pic" style="width: 100%;">
                     <h3>Game Leaderboard System (C++)</h3>
-                    <p class="text_item">
-                        A C++-based leaderboard management system designed for efficient player score tracking and ranking. The system utilizes Linked Lists for player data storage, a Min-Heap Priority Queue for managing the top 10 scores, and Arrays for quick display. It allows players to submit and update scores, automatically maintaining an accurate and real-time leaderboard with file storage for persistence. 
-                        <br><br>
-                        <a href="https://github.com/KaeL-0/Game-Leaderboard-System.git" target="_blank" style="text-size: 17px; margin-left: 0px;">Github Repository</a>
+                    <p class="text_item">A C++-based leaderboard management system designed for efficient player score tracking and ranking. The system utilizes Linked Lists for player data storage, a Min-Heap Priority Queue for managing the top 10 scores, and Arrays for quick display. It allows players to submit and update scores, automatically maintaining an accurate and real-time leaderboard with file storage for persistence. 
+                    <br><br>
+                    <a href="https://github.com/KaeL-0/Game-Leaderboard-System.git" target="_blank" style="text-size: 17px;  margin-left: 0px;">Github Repository</a>
                     </p>
                 </div>
 
-                <!-- Online Marketplace Project -->
                 <div class="item">
                     <img src="image/market.png" alt="A marketplace pic" style="width: 100%;">
                     <h3>Online Marketplace System (Java)</h3>
-                    <p class="text_item">
-                        A Java-based E-Commerce System designed for seamless transactions between buyers and sellers. The system features secure user authentication, a dynamic product catalog, shopping cart functionality, and multiple payment methods (Cash on Delivery, Debit/Credit Card, GCash). Sellers can manage product listings, while customers can browse, add to cart, and checkout efficiently. 
-                        <br><br>
-                        <a href="https://github.com/KaeL-0/Java-based-Online-Marketplace-System.git" target="_blank" style="text-size: 17px; margin-left: 0px;">Github Repository</a>
+                    <p class="text_item">A Java-based E-Commerce System designed for seamless transactions between buyers and sellers. The system features secure user authentication, a dynamic product catalog, shopping cart functionality, and multiple payment methods (Cash on Delivery, Debit/Credit Card, GCash). Sellers can manage product listings, while customers can browse, add to cart, and checkout efficiently. 
+                    <br><br>
+                    <a href="https://github.com/KaeL-0/Java-based-Online-Marketplace-System.git" target="_blank" style="text-size: 17px;  margin-left: 0px;">Github Repository</a>
                     </p>
                 </div>
             </section>
 
-            <!-- Profile and Tech Stack section -->
-            <aside class="grid_container">
-                <!-- Personal Profile -->
+            <!-- Profile section -->
+            <aside class= grid_container">
                 <div class="item">
                     <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
                     <h2 class="text_margin">Mikhael Edman P. Gomez</h2>
                     <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
 
-                    <!-- Profile navigation buttons -->
                     <div class="button_container">
+                        <!-- Profile navigation buttons -->
                         <a id="myLink" href="alt_profile.html" target="_blank">Alternate Profile</a>
-                        
+                
                         <!-- Link switching script -->
                         <script>
                             let isOriginal = true;
 
                             function link() {
                                 const myLink = document.getElementById('myLink');
-                                
+                        
                                 if (isOriginal) {
                                     myLink.href = "rhau_profile.html";
                                     myLink.innerHTML = "Rhaulline's Profile";
+                 
                                 } else {
                                     myLink.href = "https://www.facebook.com/mikhael.edman";
                                     myLink.innerHTML = "Facebook Profile";
@@ -85,10 +81,9 @@
                     <br>
                 </div>
 
-                <!-- Tech Stack Section -->
                 <div class="item">
                     <h3 class="myheader">Tech Stack</h3>
-                    <p class="text_item">Lorem ipsum dolor sit amet. Et possimus dolores est necessitatibus sapiente qui</p>
+                    <p class="text_item" >Lorem ipsum dolor sit amet. Et possimus dolores est necessitatibus sapiente qui</p>
                 </div>
             </aside>
         </main>
