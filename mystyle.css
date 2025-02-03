@@ -5,8 +5,11 @@
                 margin: 0;        /* Removes any default margin */
                 padding: 0;       /* Removes any default padding */
                 width: 100%;      /* Ensures the body and html take the full width */
+            }
+            body {
                 background-color: rgba(221, 221, 221, 0.3);
             }
+            
 
             /* Typography styles */
             h1, h2, h3, h4, h5, h6 {
