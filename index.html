@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-PH">
-    <!-- Head section: Contains metadata, CSS links, and page configuration -->
-    <head>
-        <!-- Page title -->
-        <title>Mikhael Profile</title>
-
-        <!-- Essential meta tags for proper rendering and responsiveness -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Google Fonts import for Raleway and Open Sans -->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-        <!-- Custom stylesheet link -->
-        <link rel="stylesheet" href="mystyle.css">
+<html lang="en">
+<head>
+    <!-- Page title -->
+    <title>Mikhael Profile</title>
+    
+    <!-- Essential meta tags for proper rendering and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts import -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom stylesheet link -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
 
         <style>
             ul {
@@ -37,91 +37,59 @@
         </style>
     </head>
 
-    <body>
-        <!-- Main header section -->
+<body>
+    <!-- Main header section -->
+    <header>
         <h1>The Profile</h1>
-        <!-- Welcome message with styled name -->
-        <p style="text-align: center; margin-bottom: 90px;">
-            Welcome to <span class="black_text">Mikhael's</span> profile
-        </p>
-
-        <!-- Main content wrapper -->
-        <main class="mycontainer" style="margin-bottom: 70px;">
-            <!-- Project showcase section using grid layout -->
-            <section class="grid_container">
-                <!-- Project 1: Game Leaderboard System -->
+    </header>
+    
+    <!-- Welcome message -->
+    <p style="text-align: center; margin-bottom: 90px;">
+        Welcome to <span class="highlight_text">Mikhael's</span> profile
+    </p>
+    
+    <!-- Main content wrapper -->
+    <main class="mycontainer" style="margin-bottom: 70px;">
+        <!-- Project showcase section using grid layout -->
+        <section class="grid_container">
+            <article class="item">
+                <img src="image/leaderboard.png" alt="Game Leaderboard System Screenshot" style="width: 100%;">
+                <h3>Game Leaderboard System (C++)</h3>
+                <p class="text_item">A C++-based leaderboard management system...</p>
+                <a href="https://github.com/KaeL-0/Game-Leaderboard-System.git" target="_blank">View on GitHub</a>
+            </article>
+            
+            <article class="item">
+                <img src="image/market.png" alt="Online Marketplace System Screenshot" style="width: 100%;">
+                <h3>Online Marketplace System (Java)</h3>
+                <p class="text_item">A Java-based E-Commerce System...</p>
+                <a href="https://github.com/KaeL-0/Java-based-Online-Marketplace-System.git" target="_blank">View on GitHub</a>
+            </article>
+        </section>
+        
+        <!-- Sidebar/Profile section -->
+        <aside>
+            <!-- Personal information card -->
+            <section class="profile_section">
                 <div class="item">
-                    <img src="image/leaderboard.png" alt="C++ pic" style="width: 100%;">
-                    <h3>Game Leaderboard System (C++)</h3>
-                    <p class="text_item">
-                        A C++-based leaderboard management system designed for efficient player score tracking and ranking. 
-                        The system utilizes Linked Lists for player data storage, a Min-Heap Priority Queue for managing 
-                        the top 10 scores, and Arrays for quick display. It allows players to submit and update scores, 
-                        automatically maintaining an accurate and real-time leaderboard with file storage for persistence.
-                        <br><br>
-                        <a href="https://github.com/KaeL-0/Game-Leaderboard-System.git" target="_blank" style="text-size: 17px; margin-left: 0px;">
-                            Github Repository
-                        </a>
-                    </p>
-                </div>
-
-                <!-- Project 2: Online Marketplace System -->
-                <div class="item">
-                    <img src="image/market.png" alt="A marketplace pic" style="width: 100%;">
-                    <h3>Online Marketplace System (Java)</h3>
-                    <p class="text_item">
-                        A Java-based E-Commerce System designed for seamless transactions between buyers and sellers. 
-                        The system features secure user authentication, a dynamic product catalog, shopping cart functionality, 
-                        and multiple payment methods (Cash on Delivery, Debit/Credit Card, GCash). Sellers can manage product 
-                        listings, while customers can browse, add to cart, and checkout efficiently.
-                        <br><br>
-                        <a href="https://github.com/KaeL-0/Java-based-Online-Marketplace-System.git" target="_blank" style="text-size: 17px; margin-left: 0px;">
-                            Github Repository
-                        </a>
-                    </p>
+                    <img src="image/gomez_image.jpg" alt="Profile Picture" style="width: 100%;">
+                    <h2 class="content_spacing">Mikhael Edman P. Gomez</h2>
+                    <p class="content_spacing">A college student in FEU Tech<br>Computer Science Major</p>
+                    
+                    <!-- Profile navigation section -->
+                    <nav class="button_container">
+                        <a id="myLink" href="https://www.facebook.com/mikhael.edman" target="_blank">Facebook Profile</a>
+                        <button type="button" onclick="link()" class="mybutton">Click me to change link</button>
+                    </nav>
                 </div>
             </section>
-
-            <!-- Sidebar/Profile section -->
-            <aside>
-                <!-- Personal information card -->
-                <div class="item" style="margin-bottom: 50px;">
-                    <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
-                    <h2 class="text_margin">Mikhael Edman P. Gomez</h2>
-                    <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
-
-                    <!-- Profile navigation section -->
-                    <div class="button_container">
-                        <a id="myLink" href="https://www.facebook.com/mikhael.edman" target="_blank">Facebook Profile</a>
-                        
-                        <!-- JavaScript for link switching functionality -->
-                        <script>
-                            let isOriginal = true;
-
-                            function link() {
-                                const myLink = document.getElementById('myLink');
-                                
-                                if (isOriginal) {
-                                    myLink.href = "rhau_profile.html";
-                                    myLink.innerHTML = "Rhaulline's Profile";
-                                } else {
-                                    myLink.href = "https://www.facebook.com/mikhael.edman";
-                                    myLink.innerHTML = "Facebook Profile";
-                                }
-
-                                isOriginal = !isOriginal;
-                            }
-                        </script>
-                        <button type="button" onclick="link()" class="mybutton">Click me to change link</button>
-                    </div>
-                    <br>
-                </div>
-
-                <!-- Tech Stack section -->
+            
+            <!-- Tech Stack section -->
+            <section class="tech_stack">
                 <div class="item">
                     <h3 class="myheader">Tech Stack</h3>
                     <ul>
-                        <li class="black_text">Software Engineering</li>
+                        <li class="highlight_text">Software Engineering</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>C++</li>
@@ -130,12 +98,13 @@
                         <li>Linux NASM</li>
                     </ul>
                 </div>
-            </aside>
-        </main>
-
-        <!-- Footer section -->
-        <footer>
-            <p class="footer_text">A Mikhael's Website</p>
-        </footer>
-    </body>
+            </section>
+        </aside>
+    </main>
+    
+    <!-- Footer section -->
+    <footer>
+        <small>A Mikhael's Website</small>
+    </footer>
+</body>
 </html>
