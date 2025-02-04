@@ -130,6 +130,25 @@ a:hover, a:active {
     color: white;
 }
 
+/* List styles */
+ul {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to a new row */
+    list-style-type: none;
+    text-align: center;
+    gap: 15px 15px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;            
+}
+            
+li {
+    font-size: 13px;
+    display: inline-block; 
+    background-color: rgba(221, 221, 221, 0.4);
+    padding: 3px 5px 3px 5px;
+}  
+
 /* Footer styles */
 footer {
     background-color: rgb(119, 136, 153);
