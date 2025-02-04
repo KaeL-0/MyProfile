@@ -19,7 +19,10 @@
 
     <body>
         <!-- Main header section -->
+        <header>
         <h1>The Profile</h1>
+          </header>
+        
         <!-- Welcome message with styled name -->
         <p style="text-align: center; margin-bottom: 90px;">
             Welcome to <span class="black_text">Mikhael's</span> profile
@@ -30,7 +33,7 @@
             <!-- Project showcase section using grid layout -->
             <section class="grid_container">
                 <!-- Project 1: Game Leaderboard System -->
-                <div class="item">
+                <article class="item">
                     <img src="image/leaderboard.png" alt="C++ pic" style="width: 100%;">
                     <h3>Game Leaderboard System (C++)</h3>
                     <p class="text_item">
@@ -43,10 +46,10 @@
                             Github Repository
                         </a>
                     </p>
-                </div>
+                </article>
 
                 <!-- Project 2: Online Marketplace System -->
-                <div class="item">
+                <article class="item">
                     <img src="image/market.png" alt="A marketplace pic" style="width: 100%;">
                     <h3>Online Marketplace System (Java)</h3>
                     <p class="text_item">
@@ -59,19 +62,19 @@
                             Github Repository
                         </a>
                     </p>
-                </div>
+                </article>
             </section>
 
             <!-- Sidebar/Profile section -->
             <aside>
                 <!-- Personal information card -->
-                <div class="item" style="margin-bottom: 50px;">
+                <article class="item" style="margin-bottom: 50px;">
                     <img src="image/gomez_image.jpg" alt="A selfie picture" style="width: 100%;">
                     <h2 class="text_margin">Mikhael Edman P. Gomez</h2>
                     <p class="text_margin">A college student in FEU Tech<br>Computer Science Major</p>
 
                     <!-- Profile navigation section -->
-                    <div class="button_container">
+                    <nav class="button_container">
                         <a id="myLink" href="https://www.facebook.com/mikhael.edman" target="_blank">Facebook Profile</a>
                         
                         <!-- JavaScript for link switching functionality -->
@@ -93,12 +96,12 @@
                             }
                         </script>
                         <button type="button" onclick="link()" class="mybutton">Click me to change link</button>
-                    </div>
+                    </nav>
                     <br>
-                </div>
+                </article>
 
                 <!-- Tech Stack section -->
-                <div class="item">
+                <article class="item">
                     <h3 class="myheader">Tech Stack</h3>
                     <ul>
                         <li class="black_text">Software Engineering</li>
@@ -109,7 +112,7 @@
                         <li>SQL</li>
                         <li>Linux NASM</li>
                     </ul>
-                </div>
+                </article>
             </aside>
         </main>
 
