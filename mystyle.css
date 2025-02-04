@@ -60,7 +60,7 @@ h1 {
 .black_text {
     background-color: black;
     color: white;
-    padding: 3px;
+    padding: 3px 5px 3px 5px;
 }
 
 /* Header styles */
