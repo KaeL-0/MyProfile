@@ -12,3 +12,4 @@
                                 }
 
                                 isOriginal = !isOriginal;
+                            }
