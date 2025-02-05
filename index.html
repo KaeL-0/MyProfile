@@ -94,23 +94,9 @@
                         <a id="myLink" href="https://www.facebook.com/mikhael.edman" target="_blank">Facebook Profile</a>
                         
                         <!-- JavaScript for link switching functionality -->
-                        <script>
-                            let isOriginal = true;
-
-                            function link() {
-                                const myLink = document.getElementById('myLink');
-                                
-                                if (isOriginal) {
-                                    myLink.href = "rhau_profile.html";
-                                    myLink.innerHTML = "Rhaulline's Profile";
-                                } else {
-                                    myLink.href = "https://www.facebook.com/mikhael.edman";
-                                    myLink.innerHTML = "Facebook Profile";
-                                }
-
-                                isOriginal = !isOriginal;
-                            }
+                        <script src= "script.js">
                         </script>
+                        
                         <button type="button" onclick="link()" class="mybutton">Click me to change link</button>
                     </nav>
                     <br>
