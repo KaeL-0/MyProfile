@@ -58,7 +58,7 @@ h1 {
 }
 
 .black_text {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 3px 5px 3px 5px;
 }
