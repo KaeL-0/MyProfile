@@ -151,7 +151,7 @@ li {
 
 /* Footer styles */
 footer {
-    background-color: rgb(119, 136, 153);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 30px;
 }
